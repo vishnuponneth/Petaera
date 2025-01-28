@@ -12,6 +12,41 @@ body {
   color: #626262;
   overflow-x: hidden;
 }
+.tm-feature-box {
+  display: flex;
+  flex-direction: column; /* Ensures text stacks vertically */
+  justify-content: space-between; /* Aligns title and description properly */
+  align-items: center; /* Centers content */
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #fff;
+  height: 100%; /* Makes all boxes the same height */
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.tm-feature-box:hover {
+  transform: translateY(-10px); /* Optional hover effect */
+}
+
+.tm-section {
+  padding: 60px 0;
+  background-color: #f9f9f9;
+}
+
+.tm-feature-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.tm-feature-description {
+  font-size: 1rem;
+  color: #666;
+  flex-grow: 1; /* Ensures descriptions stretch evenly */
+}
 
 textarea {
   font-family: "Open Sans", sans-serif;
@@ -73,7 +108,7 @@ p:last-child {
   width: 100%;
   /* border-top: 1px solid #909090; */
   /* border-bottom: 1px solid #909090; */
-  background-color: rgb(71, 56, 56);
+  background-color:rgb(0, 0, 0);
   z-index: 3000; 
 }
 
@@ -81,7 +116,7 @@ p:last-child {
   position: fixed;
   top: 0;
   border-top: none;
-  background: rgb(71, 56, 56);
+  background: rgb(0,0,0);
 }
 
 .navbar-expand-md .navbar-nav .nav-link {
@@ -511,7 +546,7 @@ figure {
   }
 
   #tmMainNav {
-    background: white;
+    background: rgb(0, 0, 0);
     border: 1px solid #c6c6c6;
   }
 
