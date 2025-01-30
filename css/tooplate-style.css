@@ -5,6 +5,20 @@ Tooplate 2111 Pro Line
 http://www.tooplate.com/view/2111-pro-line
 
 */
+.tm-feature-block a {
+  text-decoration: none; /* Removes underline */
+  color: inherit; /* Inherits color from parent */
+  display: block; /* Makes the entire section clickable */
+}
+
+.tm-feature-block a:hover,
+.tm-feature-block a:focus,
+.tm-feature-block a:active {
+  text-decoration: none; /* Ensures no underline on hover */
+  color: inherit; /* Keeps the text color unchanged */
+  outline: none; /* Removes focus outline */
+}
+
 .tm-contact-card {
   background: #ffffff;
   padding: 30px;
@@ -249,7 +263,7 @@ a:hover {
 }
 
 .tm-footer-link {
-  color: #626262;
+  color: #e0dcdc;
 }
 
 button {
