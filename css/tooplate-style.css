@@ -5,6 +5,198 @@ Tooplate 2111 Pro Line
 http://www.tooplate.com/view/2111-pro-line
 
 */
+.tm-contact-card {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.tm-contact-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.tm-contact-header {
+  font-size: 26px;
+  font-weight: bold;
+  color: #007bff;
+  margin-bottom: 15px;
+}
+
+.tm-contact-details p {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.tm-contact-details a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.tm-contact-details a:hover {
+  color: #007bff;
+}
+
+.tm-icon {
+  color: #007bff;
+  font-size: 22px;
+  margin-right: 10px;
+}  
+.tm-activity-block {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tm-activity-block:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.tm-activity-img-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.tm-activity-img {
+  /* width: 100%; */
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.tm-activity-block:hover .tm-activity-img {
+  transform: scale(1.05);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  font-size: 20px;
+  font-weight: bold;
+  transition: opacity 0.3s ease;
+}
+
+.tm-activity-block:hover .overlay {
+  opacity: 1;
+}
+
+.tm-parallax-header h2 {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.tm-features-section {
+padding: 3rem 0;
+background-color: #f8f9fa;
+}
+
+.tm-feature-block {
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+padding: 1.5rem;
+margin-bottom: 20px;
+}
+
+.tm-feature-inner {
+background-color: #fff;
+border-radius: 10px;
+padding: 2rem;
+box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+transition: transform 0.3s, box-shadow 0.3s;
+height: 100%; /* Ensures all inner sections take equal height */
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
+
+.tm-feature-block:hover .tm-feature-inner {
+transform: translateY(-5px);
+box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.tm-feature-header {
+margin-bottom: 15px;
+}
+
+.tm-feature-icon {
+margin-bottom: 10px;
+color: #007bff;
+}
+
+.tm-feature-h {
+font-size: 1.4rem;
+font-weight: bold;
+margin-bottom: 15px;
+}
+
+.tm-feature-block ul {
+list-style: none;
+padding: 0;
+margin: 0;
+}
+
+.tm-feature-block ul li {
+font-size: 1rem;
+margin-bottom: 10px;
+text-align: left;
+padding-left: 1.5rem;
+position: relative;
+}
+
+.tm-feature-block ul li::before {
+content: "\f00c";
+font-family: "Font Awesome 5 Free";
+font-weight: 900;
+position: absolute;
+left: 0;
+color: #007bff;
+}
+
+.feature-1 .tm-feature-icon {
+color: #007bff;
+}
+
+.feature-2 .tm-feature-icon {
+color: #28a745;
+}
+
+.feature-3 .tm-feature-icon {
+color: #17a2b8;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+.tm-feature-inner {
+  padding: 1.5rem;
+}
+
+.tm-feature-h {
+  font-size: 1.2rem;
+}
+
+.tm-feature-icon {
+  font-size: 4rem;
+}
+}
 
 body {
   font-family: "Open Sans", sans-serif;
@@ -129,8 +321,8 @@ p:last-child {
 
 #tmMainNav .nav-link.current,
 #tmMainNav .nav-link:hover {
-  color: #0662b9;
-  background: #eaeaea;
+  color: #edf1f5;
+  background: #0f1210;
 }
 
 .navbar-light .navbar-toggler {
@@ -428,6 +620,7 @@ figure {
 
 .tm-footer {
   margin-bottom: 40px;
+  
 }
 
 .tm-footer-row {
