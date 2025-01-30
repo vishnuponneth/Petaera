@@ -21,16 +21,7 @@ http://www.tooplate.com/view/2111-pro-line
 
 .tm-contact-card {
   background: #ffffff;
-  padding: 30px;
-  border-radius: 12px;
-  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
   text-align: center;
-}
-
-.tm-contact-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
 }
 
 .tm-contact-header {
@@ -264,6 +255,7 @@ a:hover {
 
 .tm-footer-link {
   color: #e0dcdc;
+  align-items: center;
 }
 
 button {
