@@ -2,103 +2,151 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Terms and Services | PetaParking</title>
   <style>
     body {
       font-family: Arial, sans-serif;
       line-height: 1.6;
-      margin: 40px;
+      margin: 0;
+      padding: 20px;
+      background-color: #f4f4f4;
       color: #333;
     }
-    h1, h2 {
-      color: #1f4e79;
+    .container {
+      max-width: 800px;
+      margin: 30px auto;
+      background: #fff;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h1, h2, h3 {
+      color: #0056b3;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .section {
+      margin-bottom: 20px;
+    }
+    .section-title {
+      font-size: 1.2em;
+      margin-bottom: 10px;
+      border-bottom: 2px solid #0056b3;
+      padding-bottom: 5px;
+    }
+    p {
+      margin: 10px 0;
     }
     ul {
-      padding-left: 20px;
+      margin: 10px 0 10px 20px;
+      padding: 0;
+    }
+    a {
+      color: #0056b3;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
+  <div class="container">
+    <h1>Terms and Services - PetaParking</h1>
+    <p><strong>Effective Date:</strong> April 16, <span id="current-year"></span></p>
 
-  <h1>PetaParking - Terms and Services</h1>
-  <p>Effective Date: April 16, <span id="current-year"></span></p>
+    <div class="section">
+      <h2 class="section-title">1. Overview</h2>
+      <p>PetaParking is a smart parking management system that uses AI, IP cameras, and web-based tools to automate vehicle entry, exit, and billing operations. These terms apply to all digital interfaces and hardware services provided by PetaParking.</p>
+    </div>
 
-  <p>Welcome to PetaParking. By accessing our website, using our mobile application, or interacting with our automated parking systems, you agree to comply with the following terms and conditions.</p>
+    <div class="section">
+      <h2 class="section-title">2. User Responsibilities</h2>
+      <ul>
+        <li>Users must provide accurate vehicle and contact details during parking slip generation.</li>
+        <li>Parking staff and owners are responsible for ensuring all data entered into the system is correct.</li>
+        <li>Unauthorized access, tampering, or misuse of any system component (hardware or software) is strictly prohibited.</li>
+      </ul>
+    </div>
 
-  <h2>1. Overview</h2>
-  <p>PetaParking is a smart parking management system that uses AI, IP cameras, and web-based tools to automate vehicle entry, exit, and billing operations. These terms apply to all digital interfaces and hardware services provided by PetaParking.</p>
+    <div class="section">
+      <h2 class="section-title">3. Data Collection & Usage</h2>
+      <ul>
+        <li>We collect vehicle numbers, timestamps, images, parking durations, and user interactions for the sole purpose of managing parking operations.</li>
+        <li>No biometric or sensitive personal data is collected.</li>
+        <li>Data is securely stored and may be used for improving service quality or for legal compliance purposes.</li>
+      </ul>
+    </div>
 
-  <h2>2. User Responsibilities</h2>
-  <ul>
-    <li>Users must provide accurate vehicle and contact details during parking slip generation.</li>
-    <li>Parking staff and owners are responsible for ensuring all data entered into the system is correct.</li>
-    <li>Unauthorized access, tampering, or misuse of any system component (hardware or software) is strictly prohibited.</li>
-  </ul>
+    <div class="section">
+      <h2 class="section-title">4. Image Capture</h2>
+      <ul>
+        <li>PetaParking uses AI-powered IP cameras to detect vehicle entry/exit and capture number plates.</li>
+        <li>Captured images are used for slip generation and stored temporarily unless legally required for audit trails.</li>
+      </ul>
+    </div>
 
-  <h2>3. Data Collection & Usage</h2>
-  <ul>
-    <li>We collect vehicle numbers, timestamps, images, parking durations, and user interactions for the sole purpose of managing parking operations.</li>
-    <li>No biometric or sensitive personal data is collected.</li>
-    <li>Data is securely stored and may be used for improving service quality or for legal compliance purposes.</li>
-  </ul>
+    <div class="section">
+      <h2 class="section-title">5. System Availability</h2>
+      <ul>
+        <li>While we strive for 24/7 availability, scheduled maintenance or network disruptions may occur.</li>
+        <li>PetaParking is not liable for missed detections or delayed access caused by hardware failure, power loss, or network issues.</li>
+      </ul>
+    </div>
 
-  <h2>4. Image Capture</h2>
-  <ul>
-    <li>PetaParking uses AI-powered IP cameras to detect vehicle entry/exit and capture number plates.</li>
-    <li>Captured images are used for slip generation and stored temporarily unless legally required for audit trails.</li>
-  </ul>
+    <div class="section">
+      <h2 class="section-title">6. Payment & Billing</h2>
+      <ul>
+        <li>Parking charges are calculated dynamically based on configured slabs and duration.</li>
+        <li>Overdue charges are applied automatically for extended stays beyond paid duration.</li>
+        <li>All payments must be cleared before vehicle exit unless otherwise permitted by parking management.</li>
+      </ul>
+    </div>
 
-  <h2>5. System Availability</h2>
-  <ul>
-    <li>While we strive for 24/7 availability, scheduled maintenance or network disruptions may occur.</li>
-    <li>PetaParking is not liable for missed detections or delayed access caused by hardware failure, power loss, or network issues.</li>
-  </ul>
+    <div class="section">
+      <h2 class="section-title">7. Limitation of Liability</h2>
+      <p>PetaParking is not responsible for loss, damage, or theft of vehicles or belongings. Our system assists in parking management but does not guarantee vehicle security.</p>
+    </div>
 
-  <h2>6. Payment & Billing</h2>
-  <ul>
-    <li>Parking charges are calculated dynamically based on configured slabs and duration.</li>
-    <li>Overdue charges are applied automatically for extended stays beyond paid duration.</li>
-    <li>All payments must be cleared before vehicle exit unless otherwise permitted by parking management.</li>
-  </ul>
+    <div class="section">
+      <h2 class="section-title">8. Modification of Terms</h2>
+      <p>We reserve the right to update or change these Terms at any time. Continued use of our system after changes indicates acceptance.</p>
+    </div>
 
-  <h2>7. Limitation of Liability</h2>
-  <p>PetaParking is not responsible for loss, damage, or theft of vehicles or belongings. Our system assists in parking management but does not guarantee vehicle security.</p>
+    <div class="section">
+      <h2 class="section-title">9. Contact Information</h2>
+      <p>For support or questions, contact us at: <a href="mailto:support@petaparking.com">support@petaparking.com</a></p>
+    </div>
 
-  <h2>8. Modification of Terms</h2>
-  <p>We reserve the right to update or change these Terms at any time. Continued use of our system after changes indicates acceptance.</p>
+    <div class="section">
+      <h2 class="section-title">10. Government Compliance & Pricing Responsibility</h2>
+      <p>PetaParking provides the software and system infrastructure for parking operations and does not assume any responsibility for local, municipal, or government-imposed compliance, including parking rate regulations or penalties. Parking owners are solely responsible for:</p>
+      <ul>
+        <li>Adhering to official government orders or circulars regarding parking fee structures or service regulations.</li>
+        <li>Updating the payment slabs within the system to reflect any revised charges mandated by local authorities.</li>
+        <li>Handling legal or financial disputes arising from non-compliance with government policies.</li>
+      </ul>
+      <p>PetaParking, as a software/solution provider, shall not be held liable for any consequences, disputes, or regulatory actions taken against parking owners or staff in such matters.</p>
+    </div>
 
-  <h2>9. Contact Information</h2>
-  <p>For support or questions, contact us at <a href="mailto:support@petaparking.com">support@petaparking.com</a></p>
+    <div class="section">
+      <h2 class="section-title">11. Subscription & Maintenance Policy</h2>
+      <p>PetaParking operates on a monthly subscription model that is agreed upon with each parking owner. The terms include:</p>
+      <ul>
+        <li>Subscription is calculated on a <strong>per-parking-space</strong> basis.</li>
+        <li>Billing occurs monthly, with rates defined during onboarding.</li>
+        <li>We offer <strong>free maintenance for 6 months</strong> starting from the date of installation.</li>
+        <li>After the free period, maintenance services may be offered at an additional cost or as part of revised agreements.</li>
+      </ul>
+    </div>
 
-  <h2>10. Government Compliance & Pricing Responsibility</h2>
-  <p>
-    PetaParking provides the software and system infrastructure for parking operations and does not assume any responsibility for local, municipal, or government-imposed compliance, including parking rate regulations or penalties. 
-    Parking owners are solely responsible for:
-  </p>
-  <ul>
-    <li>Adhering to official government orders or circulars regarding parking fee structures or service regulations.</li>
-    <li>Updating the payment slabs within the system to reflect any revised charges mandated by local authorities.</li>
-    <li>Handling legal or financial disputes arising from non-compliance with government policies.</li>
-  </ul>
-  <p>PetaParking, as a software/solution provider, shall not be held liable for any consequences, disputes, or regulatory actions taken against parking owners or staff in such matters.</p>
-
-  <h2>11. Subscription & Maintenance Policy</h2>
-  <p>
-    PetaParking operates on a monthly subscription model that is agreed upon with each parking owner. The terms include:
-  </p>
-  <ul>
-    <li>Subscription is calculated on a <strong>per-parking-space</strong> basis.</li>
-    <li>Billing occurs monthly, with rates defined during onboarding.</li>
-    <li>We offer <strong>free maintenance for 6 months</strong> starting from the date of installation.</li>
-    <li>After the free period, maintenance services may be offered at an additional cost or as part of revised agreements.</li>
-  </ul>
-
-  <hr/>
-  <p>© <span id="copyright-year"></span> PetaParking. All rights reserved.</p>
+    <hr>
+    <p style="text-align: center;">© <span id="copyright-year"></span> PetaParking. All rights reserved.</p>
+  </div>
 
   <script>
-    // Auto-update year on page
     const year = new Date().getFullYear();
     document.getElementById('current-year').textContent = year;
     document.getElementById('copyright-year').textContent = year;
